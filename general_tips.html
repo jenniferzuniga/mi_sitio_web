@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consejos Generales de Seguridad - Seguridad en Línea</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Reset de CSS para asegurar consistencia entre navegadores -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tip h2 {
+            color: rgb(52, 128, 199); /* Color rojo */
+            font-style: italic; /* Cursiva */
+        }
+        .tip p {
+            text-align: justify;
+        }
+        .image-container {
+          
+            margin-right: 20px; /* Espaciado a la derecha del contenedor */
+        }
+        .circle-img {
+            width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor circular */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Consejos Generales de Seguridad</h1>
+            <div class="menu-toggle">☰<i class="fas fa-bars"></i></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="general_tips.html"><i class="fas fa-lightbulb"></i> Consejos Generales</a></li>
+                    <li><a href="password_protection.html"><i class="fas fa-key"></i> Protección de Contraseñas</a></li>
+                    <li><a href="social_media.html"><i class="fas fa-share-alt"></i> Seguridad en Redes</a></li>
+                    <li><a href="malware_protection.html"><i class="fas fa-shield-alt"></i> Protección contra Malware</a></li>
+                    <li><a href="resources.html"><i class="fas fa-link"></i> Recursos y Enlaces</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="tip">
+                <h2>1. Mantén Tu Software Actualizado</h2>
+                <p>Mantener tu software actualizado es crucial para proteger tu sistema contra vulnerabilidades de seguridad conocidas. Además, no olvides mantener actualizados tus navegadores web, plugins y cualquier otro software que utilices en línea, ya que también pueden ser puntos de entrada para el malware si están desactualizados.</p>
+            </div>
+            <div class="tip">
+                <h2>2. Bloquea el acceso a tus cuentas en línea</h2>
+                <p>Crea una contraseña extensa. Evita palabras comunes. Y no las reutilices.</p>
+            </div>
+            <div class="tip">
+                <h2>3. Protege tu computadora y tu teléfono</h2>
+                <p>Si te conectas a internet desde una computadora, verifica que el software de seguridad, el sistema operativo y el navegador de internet estén actualizados. Activa las actualizaciones automáticas para estar al día con las últimas protecciones.</p>
+            </div>
+            <div class="tip">
+                <h2>4. Reconoce los intentos de robo de tu información personal</h2>
+                <p>Los estafadores tratan de engañarte para lograr que les des tu información personal. Se harán pasar por representantes de una organización que conoces bien, como Apple o Amazon, e inventarán un motivo para explicar por qué necesitan que les des información. También se han hecho pasar por empleados o funcionarios de FedEx, el Servicio Postal, la Administración del Seguro Social y la FTC. Si recibes un email o mensaje de texto de tipo phishing, repórtalo.</p>
+            </div>
+            <div class="tip">
+                <h2>5. Haz copias de seguridad</h2>
+                <p>Haz copias de seguridad de la información importante que tienes en tu computadora y teléfono. De esa manera, si sucede algo, podrás recuperar tu información.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/s2.jpeg" alt="Protección contra Malware" class="circle-img">
+            </div>
+            <!-- Otros consejos van aquí -->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Seguridad en Línea</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        // JavaScript para activar y desactivar el menú toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
